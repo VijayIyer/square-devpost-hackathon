@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {  
   useNewUrlParser: true,  
@@ -11,6 +11,6 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
 });
 const app = require('./app')
 
-app.listen(port, ()=>{
+app.listen(PORT, ()=>{
   console.log(`Server running in port: 5000`)
 })
