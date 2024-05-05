@@ -21,18 +21,6 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
-  avatar: {
-    type: String,
-    maxlength: 512,
-  },
-  // role: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: 'Role',
-  // },
-  // status: {
-  //   type: Boolean,
-  //   default: true,
-  // },
   created_at: {
     type: Date,
     default: Date.now,
